@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Election Guide AI — Know Your Vote</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="app-header">
+    <div class="header-inner">
+      <div class="logo">🗳️ Election Guide AI</div>
+      <div class="tagline">Know your vote. Know your rights.</div>
+    </div>
+  </header>
+
+  <main class="app-main">
+    <nav class="tab-nav">
+      <button class="tab active" data-tab="chat">Ask AI</button>
+      <button class="tab" data-tab="timeline">Journey</button>
+      <button class="tab" data-tab="eligibility">Am I eligible?</button>
+      <button class="tab" data-tab="quiz">Quiz</button>
+      <button class="tab" data-tab="docs">Documents</button>
+    </nav>
+
+    <section id="tab-chat" class="tab-panel active">
+      <div class="quick-questions" id="quick-questions"></div>
+      <div class="chat-window" id="chat-window"></div>
+      <div class="chat-input-row">
+        <input type="text" id="chat-input" placeholder="Ask anything about elections... (English या Hindi)" />
+        <button id="chat-send">Send</button>
+      </div>
+    </section>
+
+    <section id="tab-timeline" class="tab-panel" id="timeline-panel">
+      <div id="timeline-container"></div>
+    </section>
+
+    <section id="tab-eligibility" class="tab-panel">
+      <div id="eligibility-container"></div>
+    </section>
+
+    <section id="tab-quiz" class="tab-panel">
+      <div id="quiz-container"></div>
+    </section>
+
+    <section id="tab-docs" class="tab-panel">
+      <div class="docs-section">
+        <h2>Documents for voter registration</h2>
+        <div class="docs-grid">
+          <div class="doc-card"><div class="doc-label">Identity proof</div><div class="doc-title">Aadhaar Card</div></div>
+          <div class="doc-card"><div class="doc-label">Identity proof</div><div class="doc-title">Passport</div></div>
+          <div class="doc-card"><div class="doc-label">Address proof</div><div class="doc-title">Ration Card</div></div>
+          <div class="doc-card"><div class="doc-label">Address proof</div><div class="doc-title">Utility Bill</div></div>
+        </div>
+        <h2>Documents at the polling booth</h2>
+        <div class="docs-grid">
+          <div class="doc-card highlight"><div class="doc-label">Primary (preferred)</div><div class="doc-title">EPIC — Voter ID card</div></div>
+          <div class="doc-card"><div class="doc-label">Alternative</div><div class="doc-title">Aadhaar Card</div></div>
+          <div class="doc-card"><div class="doc-label">Alternative</div><div class="doc-title">Driving Licence</div></div>
+          <div class="doc-card"><div class="doc-label">Alternative</div><div class="doc-title">PAN Card</div></div>
+          <div class="doc-card"><div class="doc-label">Alternative</div><div class="doc-title">Passport</div></div>
+          <div class="doc-card"><div class="doc-label">Alternative</div><div class="doc-title">MNREGA Job Card</div></div>
+        </div>
+        <p class="docs-note">12 photo ID documents are accepted by ECI as alternatives to EPIC.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="app-footer">
+    Voter Helpline: <strong>1950</strong> &nbsp;|&nbsp; 
+    <a href="https://voters.eci.gov.in" target="_blank">voters.eci.gov.in</a> &nbsp;|&nbsp;
+    <a href="https://nvsp.in" target="_blank">nvsp.in</a>
+  </footer>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
